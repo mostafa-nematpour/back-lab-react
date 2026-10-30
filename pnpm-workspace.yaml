@@ -1,0 +1,3 @@
+# esbuild needs its install script for vite
+onlyBuiltDependencies:
+  - esbuild

@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #1d2329;
+  background: #f6f7f8;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 12px 16px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.top nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+button {
+  font: inherit;
+  padding: 6px 12px;
+  margin: 4px 4px 4px 0;
+  cursor: pointer;
+}
+
+code {
+  background: #e9ecef;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+/* overlays: the later one in the page sits on top */
+.scrim {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 0.35);
+}
+
+.sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 60vh;
+  overflow: auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 16px 16px 0 0;
+}
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: min(340px, 85vw);
+  transform: translate(-50%, -50%);
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel {
+  font: 13px/1.4 ui-monospace, monospace;
+  background: #1d2329;
+  color: #e6edf3;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.panel ol {
+  margin: 4px 0 0;
+  padding-left: 20px;
+}
